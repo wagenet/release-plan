@@ -79,7 +79,7 @@ To use `release-plan` you need to have a valid `GITHUB_AUTH` environment variabl
 
     - `npx release-plan gather-changes > /tmp/changelog`
     - edit `/tmp/changelog`
-    - `npx release-plan --from-stdin < /tmp/changelog`
+    - `npx release-plan prepare --from-stdin < /tmp/changelog`
 
     For example, this can be necessary if a PR that's labeled `breaking` touches multiple packages and only one of those packages is actually a breaking change. In that case you can take the other package names out of the description of the PR.
 
